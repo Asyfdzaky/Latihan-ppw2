@@ -5,13 +5,13 @@ use App\Http\Controllers\PostController;
 
 //route resource
 Route::resource('/posts', PostController::class)->names([
-    'index' => 'posts.indek',
+    'index' => 'posts.index',
     'create' => 'posts.create',
     'store' => 'posts.store',
     'show' => 'posts.show',
     'edit' => 'posts.edit',
     'update' => 'posts.update',
-    '' => 'posts.destroyy',
+    'destroy' => 'posts.destroy',
 ]);
 
 Route::get('/secret', function(){
